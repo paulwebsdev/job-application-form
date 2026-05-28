@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Job Application Form</h1>
+    <p class="subtitle">Apply for Frontend Developer Position</p>
+
+    <form id="jobForm">
+
+        <label>Full Name</label>
+        <input type="text" id="name" required>
+
+        <label>Email Address</label>
+        <input type="email" id="email" required>
+
+        <label>Phone Number</label>
+        <input type="tel" id="phone" required>
+
+        <label>Position Applying For</label>
+        <select id="position" required>
+            <option value="">Select Position</option>
+            <option>Frontend Developer</option>
+            <option>Backend Developer</option>
+            <option>UI/UX Designer</option>
+        </select>
+
+        <label>Years of Experience</label>
+        <input type="number" id="experience" required>
+
+        <label>Why should we hire you?</label>
+        <textarea id="message" rows="5" required></textarea>
+
+        <button type="submit">Submit Application</button>
+
+    </form>
+
+    <p id="successMessage"></p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
